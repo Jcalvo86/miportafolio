@@ -4,3 +4,13 @@ font-family: 'Abril Fatface', cursive; */
 .head {
     background-image: url(../img/profile_1.jpg);
 }
+
+
+/* ------EXPERIENCE----- */
+
+.experience {}
+
+#carouselExperience .col {
+    padding: 2em;
+    text-align: center;
+}
