@@ -1,61 +1,191 @@
-<!-- Prueba - Mi Portafolio Contexto 
+<!DOCTYPE html>
+<html lang="en">
 
-    -Lee la prueba completa antes de comenzar.
-    -La copia de código fuente será castigada con nota 0.
-    -La prueba consta de un tiempo estimado de 6 horas (2 sesiones presenciales), no se revisarán commits posteriores a la hora de entrega.
-    -Concentrarse en incluir la mayor cantidad de ítems funcionales posibles, comenzar por los más fáciles.
-    -Se puede utilizar: Google, StackOverflow, Blogs, materiales previos del curso, entre otros.
-    -Para aprobar se debe obtener al menos el 70% del puntaje total.
-    -Luego de terminar debes subir los cambios al repositorio remoto y añadir el link del repositorio a la sección correspondiente en la plataforma empieza.
-    --------------
-    -Construye un landing page, este será un portafolio web que integre todas los desafíos realizados anteriormente.
-    --------------
-    -El sitio web debe ser responsivo.
-    -Debe incluir una grilla.
-    -El sitio web debe estar construido usando la filosofía Mobile First.
-    -Se debe integrar a lo menos un servicio externo de formularios de contacto (Typeform).
-    -Se debe usar a lo menos 2 componentes de bootstrap que incluyan JavaScript. (Carousel, tooltips, entre otros).
-    -La página debe tener una barra de navegación con links que lleven a las diferentes secciones de la página web.
-    -Todas las páginas deben contener un footer que incluya íconos de redes sociales.
-    -Se deben usar 1 o 2 tipos diferentes de fuentes (En el caso de ser 1 tipo de fuente, contrastar esta con a lo menos un peso de fuente).
-    
-    Requisitos generales 
-    -Se deben usar a lo menos 3 tipos diferentes de componentes de bootstrap (excluyendo las componentes con JavaScript) 
-    -La página debe tener titulares y subtitulares para las secciones. 
-    -Se debe a lo menos 4 clases utilitarias de Bootstrap. 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    -La página debe contener 6 secciones que incluyan: 
-    Organización e indentado del código. 
-    -Una barra de navegación fija en la parte superior de la pantalla, con links a diferentes secciones de tu página, haciendo un smooth scroll.
-    -Una sección en la que aparezca tu foto como fondo. Una sección el cual hagas una descripción sobre ti, que contenga un titular y dos párrafos (debe desaparecer en tamaños pequeños de pantalla). 
-    -Una sección que incluya tu experiencia (si no tienes experiencia como desarrollador usa tus últimos dos puestos de trabajo para esta sección o en su defecto, tus estudios). 
-    -Una sección donde aparezcan tus últimos trabajos realizados *(Si aún no tienes alguno, utiliza los desafíos realizados en las sesiones presenciales. Las fotos se encuentran en el archivo Assets - Prueba.zip)*. 
-    -Una sección de formulario de contacto con Typeform. 
-    -Una sección footer con links a tus redes sociales. 
 
-    HTML (2 puntos): 
-    -Uso de div y sections (0.5 puntos). 
-    -Correcta organización del directorio del proyecto (0.25puntos). 
-    -Correcta carga de archivos externos de estilo y script, JavaScript, Bootstrap, Google Fonts y Font Awesome.(0.25 puntos). 
-    -Construcción de secciones y clases solicitadas (1 punto). CSS (2 puntos): Uso de selectores (0.5 puntos). 
-    -Llamado correcto a Google Fonts y uso correcto de font-family (0.5 puntos). 
-    -Uso de archivo externo (0.5 puntos). 
-    -Uso de color y decorado (0.5 puntos). 
 
-    Requisitos específicos Criterios de evaluación Bootstrap (2 puntos): 
-    -Correcta integración de CDN de Bootstrap (0.5puntos). 
-    -Uso de clases utilitarias de bootstrap (0.5 puntos). 
-    -Uso de grilla (0.5 puntos). Uso de componentes de Bootstrap (0.5 puntos). 
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Descripción <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    JavaScript (2 puntos): 
-    -Llamado correcto a los CDN necesarios para Bootstrap JS (0.5 puntos).
-    -Uso de archivo externo para manejo de JavaScript (0.5 puntos). 
-    -Presencia de 2 componentes JS de Bootstrap (Carousel, tooltips, modales, entre otros) (0.5 Punto). 
-    -Presencia de formulario con Typeform (0.5 puntos). 
+    <!-- FOTO -->
+    <section class="head">
+        <h1>YO SOY</h1>
+        <hr>
+        <h1>Javier</h1>
+    </section>
 
-    -git, GitHub, Github Pages. (2 puntos):
-    Uso de git para versionar el proyecto (5 commits como mínimo). 
-    -(0.5 puntos). Creación de repositorio remoto en Github.(0.5 puntos). 
-    -Creación de Github Pages.(1 punto). 
-    -Añadir dominio personalizado (Puede usar uno .tk).(Opcional) 
--->
+    <!-- DESCRIPCIÓN -->
+    <section class="description">
+        <div>"Las partes del sistema que puedes golpear con un martillo (no recomendable) se llaman "hardware", las partes que solamente puedes maldecir hasta quedarte sin aliento, se llaman "software". Anónimo (pero clever)
+        </div>
+        <hr>
+        <div>
+            <div>Javier Andrés Calvo Avendaño( Santiago, 01 de agosto de 1986),conocido como JC, es un multimillonario magnate empresarial, informático y filántropo estadounidense, cofundador de la empresa de software Microsoft junto con Paul Allen.4​ Su fortuna
+                se calcula en 96.5 mil millones de dólares (2019) según la revista Forbes, hecho que le coloca como el segundo hombre más rico del mundo después de Jeff Bezos. Antes del estallido de la burbuja de las punto com, su patrimonio neto ascendió
+                a 100 000 millones de dólares, lo que lo convirtió en la décima persona más rica en toda la historia de la humanidad.6 Es uno de los empresarios más conocidos que surgieron durante los inicios de los ordenadores personales. Ha sido criticado
+                por sus tácticas de negocios, que han sido consideradas anticompetitivas, una opinión que en algunos casos ha sido mantenida por numerosas sentencias judiciales.7​ Está casado con Melinda Gates,1​ con quien comparte la presidencia de la
+                Fundación Bill y Melinda Gates, dedicada a reequilibrar oportunidades en salud y educación a nivel local, especialmente en las regiones menos favorecidas,8​ razón por la cual han sido galardonados con el Premio Príncipe de Asturias de
+                Cooperación Internacional 2006.3​9​10​ </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi consequuntur consequatur odio aliquam optio repellendus porro iure in fugit accusantium aliquid distinctio doloremque ut, aperiam commodi, vero placeat velit. </div>
+        </div>
+    </section>
+
+    <!-- MI EXPERIENCIA -->
+    <section class="experience">
+        <h1>Mi experiencia</h1>
+        <hr>
+        <div>
+            <div>
+                <i class="fas fa-bullhorn"></i>
+                <h3>Comunicador Audiovisual</h3>
+                <h4></h4>
+            </div>
+            <div>
+                <i class="fas fa-bullhorn"></i>
+                <h3>Comunicador Audiovisual</h3>
+                <h4></h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- MIS ULTIMOS TRABAJOS -->
+    <section class="works">
+        <h1>Mis Últimos trabajos</h1>
+        <hr>
+
+        <div class="card-deck"></div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/img/cti.jpg" alt="Cotización Trabajador Independiente">
+            <div class="card-body">
+                <h5 class="card-title">Cotización Trabajador Independiente</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="http://cotizaciontrabajadorindependiente.cl/" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/img/relaves.jpg" alt="Relaves.org">
+            <div class="card-body">
+                <h5 class="card-title">Relaves.org</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="http://relaves.org/" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/img/EAM.jpg" alt="Escuela de Artes Menores">
+            <div class="card-body">
+                <h5 class="card-title">Escuela de Artes Menores</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="http://artesmenores.org/" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-deck"></div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/img/prisma.jpg" alt="Prisma">
+            <div class="card-body">
+                <h5 class="card-title">Constructora Prisma</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="http://pdyc.cl/" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/img/chaocarbon.jpg" alt="Chaocarbon.cl">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="http://chaocarbon.cl/" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/img/relaves.org" alt="Relaves.org">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact">
+        <h1>CONTACTO</h1>
+        <hr>
+        <div class="typeform-widget" data-url="https://jcalvo86.typeform.com/to/ReW6Mz" style="width: 100%; height: 500px;"></div>
+        <script>
+            (function() {
+                var qs, js, q, s, d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm",
+                    b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                    js = ce.call(d, "script");
+                    js.id = id;
+                    js.src = b + "embed.js";
+                    q = gt.call(d, "script")[0];
+                    q.parentNode.insertBefore(js, q)
+                }
+            })()
+        </script>
+        <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=ReW6Mz&utm_source=typeform.com-01E7H42MFQBRREC3GXMB7VC53J-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a>            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>Javier</h2>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fas fa-globe"></i>
+        <i class="fab fa-gitlab"></i>
+        <i class="fab fa-github"></i>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
