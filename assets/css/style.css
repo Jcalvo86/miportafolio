@@ -1,16 +1,171 @@
-/* font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: 'Abril Fatface', cursive; */
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-top: 33px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+hr {
+    max-width: 100px;
+    height: 1px;
+    background-color: #373a3c;
+    width: 60%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #373a3c;
+}
+
+p {
+    font-weight: 300;
+}
+
+
+/* ------NAVBAR----- */
+
+nav {
+    background-color: #660066;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* ------HEADER----- */
 
 .head {
-    background-image: url(../img/profile_1.jpg);
+    background-image: url(../img/bg_hero.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 567px;
+}
+
+.head #headTitle {
+    bottom: 25px;
+    width: 100%;
+}
+
+.head hr {
+    max-width: 198px;
+}
+
+.fontExtraLight {
+    font-weight: 100 !important;
+}
+
+.head hr {
+    background-color: white;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
 }
 
 
 /* ------EXPERIENCE----- */
 
-.experience {}
+.experience i {
+    color: #660066;
+}
 
-#carouselExperience .col {
+#experience .col {
     padding: 2em;
     text-align: center;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+
+/* ------TRABAJO----- */
+
+.works {
+    background-color: #660066;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.works hr {
+    background-color: white;
+}
+
+.card {
+    color: #373a3c;
+    width: 90%;
+    margin: auto;
+}
+
+.card-deck .card {
+    margin-bottom: 36px;
+    padding-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+}
+
+
+/* ------FOOTER----- */
+
+footer {
+    background-color: #660066;
+    color: white;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    height: 215px;
+}
+
+footer h2 {
+    padding-bottom: 12px;
+}
+
+footer a {
+    padding-right: 10px;
+    color: white;
+}
+
+footer a:last-child {
+    padding-right: 0;
 }
