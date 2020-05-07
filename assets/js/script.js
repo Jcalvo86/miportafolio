@@ -1,6 +1,10 @@
 $('.carousel').carousel()
 
 $(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(function() {
     $("a").click(function(event) {
         if (this.has !== "") {
             event.preventDefault();

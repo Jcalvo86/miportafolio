@@ -101,6 +101,26 @@ nav {
 }
 
 
+/* ------DESCRIPCIÓN----- */
+
+.description {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.description h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.description p {
+    font-weight: 400;
+    line-height: 2;
+}
+
+
 /* ------EXPERIENCE----- */
 
 .experience i {
@@ -149,6 +169,8 @@ nav {
 /* ------FOOTER----- */
 
 footer {
+    display: flex;
+    flex-flow: column;
     background-color: #660066;
     color: white;
     padding-top: 45px;
@@ -168,4 +190,60 @@ footer a {
 
 footer a:last-child {
     padding-right: 0;
+}
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 52px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+    h4 {
+        font-size: 25px;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+    hr {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: #373a3c;
+    }
+    p {
+        font-weight: 300;
+    }
+    /* ------HEADER----- */
+    .head {
+        height: 767px;
+    }
+    .head h1 {
+        font-size: 72px;
+    }
+    .head #headTitle {
+        bottom: 25px;
+        width: 100%;
+    }
+    .head hr {
+        max-width: 198px;
+    }
+    footer {
+        height: 218px;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
