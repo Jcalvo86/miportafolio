@@ -7,7 +7,7 @@
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -17,12 +17,12 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand">J</a>
+            <a class="navbar-brand nav-link" href="#home">J</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-                <ul class="navbar-nav text-left">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#description">Descripción <span class="sr-only">(current)</span></a>
                     </li>
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#works">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -41,13 +41,12 @@
     </nav>
 
     <!-- FOTO -->
-    <section class="head align-bottom">
+    <section class="head align-bottom" id="home">
         <div id="headTitle">
             <h1 class="fontExtraLight">YO SOY</h1>
             <hr>
             <h1>Javier</h1>
         </div>
-
     </section>
 
     <!-- DESCRIPCIÓN -->
@@ -115,21 +114,11 @@
                     </div>
                 </div>
             </div>
-
-            <!-- BOTONES -->
-            <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
-                <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-                <span class="sr-only ">Previous</span>
-            </a>
-            <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
-                <span class="carousel-control-next-icon " aria-hidden="true "></span>
-                <span class="sr-only ">Next</span>
-            </a>
         </div>
     </section>
 
     <!-- MIS ULTIMOS TRABAJOS -->
-    <section class="works " id="works ">
+    <section class="works " id="works">
         <div class="container ">
             <h1>Mis Últimos trabajos</h1>
             <hr>
@@ -190,7 +179,7 @@
     </section>
 
     <!-- CONTACTO -->
-    <section class="contact " id="contact ">
+    <section class="contact " id="contact">
         <h1>CONTACTO</h1>
         <hr>
         <div class="typeform-widget" data-url="https://jcalvo86.typeform.com/to/ReW6Mz" style="width: 100%; height: 500px;"></div>

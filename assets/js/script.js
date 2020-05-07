@@ -5,15 +5,15 @@ $(function() {
 })
 
 $(function() {
-    $("a").click(function(event) {
-        if (this.has !== "") {
+    $(".nav-link").click(function(event) {
+        if (this.hash !== "") {
             event.preventDefault();
             var gato = this.hash;
 
             $("html, body").animate({
-                scrollTop: $(gato).offset().top
+                scrollTop: $(gato).offset().top - 50
             }, 800, function() {
-                window.location.hash = gato;
+                window.location.hash = gato - 50;
             });
         }
     });

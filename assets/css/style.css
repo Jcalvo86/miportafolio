@@ -48,6 +48,14 @@ p {
     font-weight: 300;
 }
 
+a {
+    color: white !important;
+}
+
+a:hover {
+    color: white !important;
+}
+
 
 /* ------NAVBAR----- */
 
@@ -64,6 +72,10 @@ nav {
     font-family: 'Oswald', sans-serif;
 }
 
+.nav-bar .nav-link a {
+    color: white !important;
+}
+
 
 /* ------HEADER----- */
 
@@ -74,6 +86,10 @@ nav {
     color: white;
     text-align: center;
     height: 567px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
 }
 
 .head #headTitle {
@@ -83,21 +99,11 @@ nav {
 
 .head hr {
     max-width: 198px;
-}
-
-.fontExtraLight {
-    font-weight: 100 !important;
-}
-
-.head hr {
     background-color: white;
 }
 
-.head {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 20px;
+.head h1 {
+    padding-top: 00px;
 }
 
 
@@ -192,6 +198,10 @@ footer a:last-child {
     padding-right: 0;
 }
 
+.fontExtraLight {
+    font-weight: 100 !important;
+}
+
 @media (min-width: 576px) {
     h1 {
         font-size: 52px;
@@ -229,21 +239,28 @@ footer a:last-child {
     /* ------HEADER----- */
     .head {
         height: 767px;
+        padding: 25px;
     }
     .head h1 {
         font-size: 72px;
     }
     .head #headTitle {
-        bottom: 25px;
+        bottom: 40px;
         width: 100%;
     }
     .head hr {
         max-width: 198px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     footer {
         height: 218px;
         flex-flow: row;
         justify-content: space-evenly;
         align-items: center;
+    }
+    footer h2 {
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
